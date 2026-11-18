@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fix YouTube</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo-wrap">
+      <img class="logo" src="icons/icon128.png" alt="" width="36" height="36">
+    </div>
+    <div class="heading">
+      <h1>Fix YouTube</h1>
+      <p class="tagline">Inspired by Omarchy, developed on Omarchy.<br>We can fix ANYTHING</p>
+    </div>
+  </header>
+
+  <form id="settings" class="settings">
+    <section class="card">
+      <h2 class="card-title">Autoplay</h2>
+      <p class="hint">The “play next video” toggle</p>
+      <div class="options">
+        <label class="pill"><input type="radio" name="autoplay" value="leave"> Leave alone</label>
+        <label class="pill"><input type="radio" name="autoplay" value="on"> On</label>
+        <label class="pill"><input type="radio" name="autoplay" value="off"> Off</label>
+        <label class="pill"><input type="radio" name="autoplay" value="hide"> Hide button</label>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="card-title">Closed captions</h2>
+      <p class="hint">Subtitles / CC on the player</p>
+      <div class="options">
+        <label class="pill"><input type="radio" name="captions" value="leave"> Leave alone</label>
+        <label class="pill"><input type="radio" name="captions" value="on"> On</label>
+        <label class="pill"><input type="radio" name="captions" value="off"> Off</label>
+        <label class="pill"><input type="radio" name="captions" value="hide"> Hide button</label>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="card-title">Player view</h2>
+      <p class="hint">Theater mode vs default view</p>
+      <div class="options">
+        <label class="pill"><input type="radio" name="view" value="leave"> Leave alone</label>
+        <label class="pill"><input type="radio" name="view" value="theater"> Theater</label>
+        <label class="pill"><input type="radio" name="view" value="default"> Default</label>
+        <label class="pill"><input type="radio" name="view" value="hide"> Hide button</label>
+      </div>
+    </section>
+  </form>
+
+  <div class="meta">
+    <p class="footer">Saved to your browser. Applied on the current YouTube tab without a reload.</p>
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+  </div>
+
+  <script src="shared.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

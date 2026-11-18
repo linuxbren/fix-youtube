@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy policy — Fix YouTube</title>
+  <style>
+    :root {
+      color-scheme: light;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 48px 20px 72px;
+      font: 17px/1.55 system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #222;
+      background: #fff;
+    }
+    main {
+      max-width: 40rem;
+      margin: 0 auto;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 1.75rem;
+      font-weight: 650;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+    }
+    .updated {
+      margin: 0 0 2rem;
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin: 1.75rem 0 0.5rem;
+      font-size: 1.15rem;
+      font-weight: 650;
+    }
+    p, li {
+      margin: 0 0 0.85rem;
+    }
+    ul {
+      margin: 0 0 0.85rem;
+      padding-left: 1.25rem;
+    }
+    a { color: #0b57d0; }
+    a:visited { color: #0b57d0; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Privacy policy — Fix YouTube</h1>
+    <p class="updated">Last updated November 17, 2026</p>
+
+    <p>Fix YouTube is a Chrome extension that lets you control autoplay, closed captions, and theater mode on YouTube. This page explains what the extension does and does not do with your data.</p>
+
+    <h2>No data collection</h2>
+    <p>The extension does not collect personal information, browsing history, or YouTube video data. It has no analytics, no advertising, no accounts, and no crash reporting. The people who make it never receive information about how you use it.</p>
+
+    <h2>Where settings are stored</h2>
+    <p>The only data the extension keeps are the three options you pick in the popup (autoplay, closed captions, and player view). Those are saved in your browser with <code>chrome.storage.sync</code>.</p>
+    <p>If you have Chrome Sync turned on, Chrome may copy those settings to your other signed-in browsers. That is handled by Chrome, not by a Fix YouTube server. This extension does not operate a server and does not receive your settings.</p>
+    <p>Uninstalling the extension removes its settings from that browser.</p>
+
+    <h2>No network requests</h2>
+    <p>Fix YouTube does not make network requests. It does not call home, load remote scripts, or send anything to a third party.</p>
+    <p>It only runs on <code>https://www.youtube.com/*</code>, so it can apply your settings on YouTube watch pages. It does not read or transmit the content of those pages beyond what is needed to toggle or hide those player controls on your device.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy or the extension can be opened as an issue at <a href="https://github.com/linuxbren">github.com/linuxbren</a>.</p>
+  </main>
+</body>
+</html>

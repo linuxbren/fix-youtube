@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Fix YouTube",
+  "version": "1.0.0",
+  "description": "Inspired by Omarchy, developed on Omarchy. We can fix ANYTHING",
+  "author": "Brenden Dawson",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "Fix YouTube",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*"
+      ],
+      "js": [
+        "shared.js",
+        "content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}
