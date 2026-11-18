@@ -10,9 +10,9 @@ Created by Brenden Dawson ([linuxbren](https://github.com/linuxbren)).
 
 Each setting can be left alone, forced on, forced off, or hidden:
 
-- **Autoplay** — the “play next video” toggle on the watch page
-- **Closed captions** — the player’s CC / subtitles button
 - **Player view** — theater mode vs default view
+- **Closed captions** — the player’s CC / subtitles button
+- **Autoplay** — the “play next video” toggle on the watch page
 
 Settings are saved with `chrome.storage.sync` (they follow your browser profile) and apply on the current YouTube tab without a reload. When you open a new video, or YouTube navigates between videos without a full page load, the extension reapplies your choices.
 
